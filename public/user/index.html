@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Student Information System</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Student Information System</h1>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="#" class="active" id="nav-profile">Profile</a></li>
+                        <li><a href="#" id="nav-notes">Notes</a></li>
+                        <li><a href="#" id="logout-btn">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="user-info">
+                    <span>Welcome, <strong id="username-display">User</strong></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Profile Section -->
+        <section id="profile-section">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">User Profile</h2>
+                </div>
+                <div class="card-body">
+                    <p>Username: <span id="profile-username"></span></p>
+                    <p>Role: <span id="profile-role"></span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notes Section -->
+        <section id="notes-section" style="display: none;">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">My Notes</h2>
+                    <button class="btn btn-primary" id="add-note-btn">Add New Note</button>
+                </div>
+                <div class="note-editor" id="note-editor" style="display: none;">
+                    <form id="note-form">
+                        <input type="hidden" id="note-id">
+                        <div class="form-group">
+                            <label for="note-title">Title</label>
+                            <input type="text" id="note-title" name="title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="note-content">Content</label>
+                            <textarea id="note-content" name="content"></textarea>
+                        </div>
+                        <div id="note-error-message" class="error-message"></div>
+                        <div id="note-success-message" class="success-message"></div>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="button" class="btn btn-secondary" id="cancel-note-btn">Cancel</button>
+                    </form>
+                </div>
+                <div class="notes-container" id="notes-container">
+                    <!-- Notes will be populated here -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="../js/user.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "username": "admin",
+        "password": "$2y$10$B06zt2W2tEp\/vSaSuothduNTloDvmeDODgiemfM8ELVtr6.c1vbTC",
+        "role": "admin",
+        "created_at": "2025-05-15 12:18:12"
+    },
+    {
+        "id": 2,
+        "username": "Erl",
+        "password": "$2y$10$R0UuuftL8NS9LA78YoWN1.i41LDsCnv3FKf7Q5OgJMtkLZqEeWkrG",
+        "role": "user",
+        "created_at": "2025-05-15 12:21:12"
+    },
+    {
+        "id": 3,
+        "username": "Vince",
+        "password": "$2y$10$A11y6Tc6V4k0XMLhjZGFwOiKYy6JqFlI2\/L4klwHs2pcCh.t3A09q",
+        "role": "user",
+        "created_at": "2025-05-15 12:21:57"
+    }
+]
