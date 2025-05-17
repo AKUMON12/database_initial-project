@@ -24,6 +24,10 @@ A simple web-based student information system with CRUD functionality.
 1. Install a web server with PHP support (like XAMPP, WAMP, or MAMP)
 2. Place these files in your web server's document root
 3. Access the application through your web browser (e.g., http://localhost/database/)
+4. Go to terminal or git bash and type this command: 
+```
+.\start-server.bat
+```
 
 ## How to Use
 
